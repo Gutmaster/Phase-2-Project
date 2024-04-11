@@ -72,6 +72,16 @@ ol{
   margin-left: 10px;
 }
 
+.Donation-form{
+  text-align: center;
+  margin:auto;
+  width:fit-content;
+  height:fit-content;
+  padding:3px;
+  border-style: solid;
+  border-color: blue;
+}
+
 .Album-card {
   display:inline-flex;
   flex-direction:column;

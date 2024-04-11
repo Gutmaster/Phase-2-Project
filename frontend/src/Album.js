@@ -14,9 +14,9 @@ function Album({album, message, setMessage}) {
             })
         })
         .then(() =>{
-             setInStock(inStock + amount)
-             setMessage(amount > 0 ? "Thank you for your donation!" : 'Enjoy!')
-             setTimeout(() => setMessage(''), 750)
+            setInStock(inStock + amount)
+            setMessage(amount > 0 ? "Thank you for your donation!" : 'Enjoy!')
+            setTimeout(() => setMessage(''), 750)
         })
         .catch(err => console.log(err))
     }
