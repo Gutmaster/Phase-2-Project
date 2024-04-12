@@ -1,9 +1,10 @@
-.App {
+.Header {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height:200px;
+  width:200px;
   pointer-events: none;
 }
 
@@ -82,7 +83,7 @@ ol{
   border-color: blue;
 }
 
-.Album-card {
+.Book-card {
   display:inline-flex;
   flex-direction:column;
   align-items: center;
@@ -92,11 +93,11 @@ ol{
   border-color:red;
 }
 
-.Album-card:hover {
+.Book-card:hover {
   border-color:green;
 }
 
-.Album-image{
+.Book-image{
   width: 200px;
   height: 200px;
   border-radius: 10px;

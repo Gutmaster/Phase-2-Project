@@ -1,22 +1,20 @@
 {
-  "albums": [
+  "books": [
     {
       "id": 1,
-      "title": "Quebec",
-      "artist": "Ween",
-      "image": "https://upload.wikimedia.org/wikipedia/en/5/59/Quebec_%28Front_Cover%29.png",
-      "length": "55:07",
-      "inStock": 28,
-      "owned": false
+      "title": "The Caves of Steel",
+      "author": "Isaac Asimov",
+      "genre": "Science Fiction",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/The-caves-of-steel-doubleday-cover.jpg/220px-The-caves-of-steel-doubleday-cover.jpg",
+      "inStock": 2
     },
     {
       "id": 2,
-      "title": "12 Golden Country Greats",
-      "artist": "Ween",
-      "image": "https://upload.wikimedia.org/wikipedia/en/c/c5/Ween-12GoldenCountryGreats.jpg",
-      "length": "33:37",
-      "inStock": 8,
-      "owned": false
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "genre": "Fantasy",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/TheHobbit_FirstEdition.jpg/220px-TheHobbit_FirstEdition.jpg",
+      "inStock": 3
     }
   ]
 }
