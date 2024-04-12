@@ -1,9 +1,10 @@
 import { render, screen, waitFor } from '@testing-library/react';
-import Header from './Header';
+
 import Library from './Library';
+import Home from './Home';
 
 test('renders spinning book icon', () => {
-  render(<Header />);
+  render(<Home />);
   const headerIcon = screen.getByAltText(/logo/i);
   expect(headerIcon).toBeInTheDocument();
 });
@@ -16,3 +17,11 @@ test('displays library of books', async () => {
     expect(books.length).toBeGreaterThan(0);
   });
 });
+
+// test('displays links to Library and Donation Pages', () => {
+//   render(<Home />);
+//   const libraryLink = screen.getByText(/library/i);
+//   const donationLink = screen.getByText(/donate/i);
+//   expect(libraryLink).toBeInTheDocument();
+//   expect(donationLink).toBeInTheDocument();
+// });

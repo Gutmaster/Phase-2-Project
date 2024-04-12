@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './Header.js';
 import reportWebVitals from './reportWebVitals';
 import DonationForm from './DonationForm';
 import Library from './Library.js';
+import Home from './Home.js';
 
 // Step 1. Import react-router functions
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -12,7 +12,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Library />
+    element: <Home />
   },
   {
     path: "/library",
@@ -27,7 +27,6 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App/>
     <RouterProvider router={router} />
   </React.StrictMode>
 )

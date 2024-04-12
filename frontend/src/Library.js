@@ -10,7 +10,6 @@ function Library(){
     .then(books => setBooks(books))
     .catch(err => console.log(err))}, [message]);
 
-    console.log(books);
     return (
         <div className='Header'>
             <h1>Books</h1>
