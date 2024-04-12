@@ -1,28 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
-import DonationForm from './DonationForm';
-import Library from './Library.js';
-import Home from './Home.js';
-
-// Step 1. Import react-router functions
+import React from "react";
+import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import routes from "./routes.js";
+import "./index.css"
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />
-  },
-  {
-    path: "/library",
-    element: <Library />
-  },
-  {
-    path: "/donate",
-    element: <DonationForm />
-  }
-]);
+const router = createBrowserRouter(routes);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

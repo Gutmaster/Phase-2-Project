@@ -1,5 +1,5 @@
 {
-  "albums": [
+  "books": [
     {
       "id": 1,
       "title": "The Caves of Steel",
@@ -14,7 +14,15 @@
       "author": "J.R.R. Tolkien",
       "genre": "Fantasy",
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/TheHobbit_FirstEdition.jpg/220px-TheHobbit_FirstEdition.jpg",
-      "inStock": 3
+      "inStock": 4
+    },
+    {
+      "title": "The Righteous Mind",
+      "author": "Jonathon Haidt",
+      "genre": "Psychology",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/The_Righteous_Mind.jpg/220px-The_Righteous_Mind.jpg",
+      "inStock": 1,
+      "id": 3
     }
   ]
 }

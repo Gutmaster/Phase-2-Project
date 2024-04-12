@@ -1,7 +1,7 @@
 import { render, screen, waitFor } from '@testing-library/react';
 
-import Library from './Library';
-import Home from './Home';
+import Library from './pages/Library';
+import Home from './pages/Home';
 
 test('renders spinning book icon', () => {
   render(<Home />);
