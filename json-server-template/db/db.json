@@ -6,7 +6,7 @@
       "author": "Isaac Asimov",
       "genre": "Science Fiction",
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/The-caves-of-steel-doubleday-cover.jpg/220px-The-caves-of-steel-doubleday-cover.jpg",
-      "inStock": 2
+      "inStock": 3
     },
     {
       "id": 2,
@@ -14,14 +14,14 @@
       "author": "J.R.R. Tolkien",
       "genre": "Fantasy",
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/TheHobbit_FirstEdition.jpg/220px-TheHobbit_FirstEdition.jpg",
-      "inStock": 4
+      "inStock": 3
     },
     {
       "title": "The Righteous Mind",
       "author": "Jonathon Haidt",
       "genre": "Psychology",
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/The_Righteous_Mind.jpg/220px-The_Righteous_Mind.jpg",
-      "inStock": 1,
+      "inStock": 3,
       "id": 3
     }
   ]

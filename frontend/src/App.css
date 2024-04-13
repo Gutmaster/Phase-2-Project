@@ -64,6 +64,7 @@ ol{
   width:400px;
   border-style: solid;
   border-color:red;
+  background-color: burlywood;
 }
 
 .Book-card:hover {
