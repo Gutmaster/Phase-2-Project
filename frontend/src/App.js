@@ -5,13 +5,23 @@ import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 
 function App(){
+    const [books, setBooks] = useState([]);
+
+    useEffect(() => {fetch('http://localhost:3000/books')
+    .then(res => res.json())
+    .then(books => {
+        console.log("FETCHING BOOKS")
+        setBooks(books)
+    })
+    .catch(err => console.log(err))}, []);
+
     return(
         <>
             <header>
                 <Header />
                 <NavBar />
             </header>
-            <Outlet />
+            <Outlet context={{books: books, setBooks: setBooks}}/>
         </>
     );
 };

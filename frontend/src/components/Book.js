@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
 
-function Book({book, message, setMessage}) {
-    const [inStock, setInStock] = useState(book.inStock)
-
+function Book({bookData, books, setBooks}) {
+    const [book, setBook] = useState(bookData)
+    const [donateTimer, setDonateTimer] = useState(false)
+    
     function updateStock(amount){
         fetch(`http://localhost:3000/books/${book.id}`, {
             method: 'PATCH',
@@ -10,17 +11,18 @@ function Book({book, message, setMessage}) {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                inStock: inStock + amount
+                inStock: book.inStock + amount
             })
         })
-        .then(() =>{
-            setInStock(inStock + amount)
-            setMessage(amount > 0 ? "Thank you for your donation!" : 'Enjoy!')
-            setTimeout(() => setMessage(''), 750)
+        .then(res => res.json())
+        .then((data) =>{
+            setBook(data)
+            setBooks(books.map(book => book.id === data.id ? data : book))
         })
         .catch(err => console.log(err))
+        setDonateTimer(true)
+        setTimeout(() => setDonateTimer(false), 750)
     }
-
 
     return (
         <div className='Book-card'>
@@ -30,9 +32,9 @@ function Book({book, message, setMessage}) {
             <p><span className='column1'>Genre:</span> <span className='column2'>{book.genre}</span></p>
             <br/>
             <span>
-                {<button disabled={message === '' ? false : true} onClick={()=>updateStock(1)}>Donate</button>}
-                <p>{inStock} in stock.</p>
-                {<button disabled={message === '' ? false : true} onClick={()=>updateStock(-1)}>Borrow</button>}
+                {<button disabled={donateTimer ? true : false} onClick={()=>updateStock(1)}>Donate</button>}
+                <p>{book.inStock} in stock.</p>
+                {<button disabled={donateTimer ? true: false} onClick={()=>updateStock(-1)}>Borrow</button>}
             </span>
         </div>
     )

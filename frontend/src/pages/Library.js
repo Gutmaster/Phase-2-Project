@@ -1,22 +1,18 @@
 import React, {useState, useEffect} from'react';
+import { useOutletContext } from'react-router-dom';
 import Book from '../components/Book';
 import "../App.css";
 
 function Library(){
-    const [books, setBooks] = useState([]);
     const [message, setMessage] = useState('');
-
-    useEffect(() => {fetch('http://localhost:3000/books')
-    .then(res => res.json())
-    .then(books => setBooks(books))
-    .catch(err => console.log(err))}, [message]);
+    const {books, setBooks} = useOutletContext()
 
     return (
         <div className='library-container'>
             <h1>Books</h1>
             <ul>
                 {books.map(book => (
-                    <Book className='Book-card' key={book.id} book={book} message={message} setMessage={setMessage}/>
+                    <Book className='Book-card' key={book.id} bookData={book} books={books} setBooks={setBooks}/>
                 ))}
             </ul>
             {message === '' ? null : <p className='message'>{message}</p>}
