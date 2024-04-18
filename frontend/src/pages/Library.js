@@ -4,7 +4,6 @@ import Book from '../components/Book';
 import "../App.css";
 
 function Library(){
-    const [message, setMessage] = useState('');
     const {books, setBooks} = useOutletContext()
 
     return (
@@ -16,7 +15,6 @@ function Library(){
                         <Book className='Book-card' key={book.id} bookData={book} books={books} setBooks={setBooks}/>
                     ))}
                 </ul>
-                {message === '' ? null : <p className='message'>{message}</p>}
             </div>
         </div>
     );
