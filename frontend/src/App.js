@@ -10,7 +10,6 @@ function App(){
     useEffect(() => {fetch('http://localhost:3000/books')
     .then(res => res.json())
     .then(books => {
-        console.log("FETCHING BOOKS")
         setBooks(books)
     })
     .catch(err => console.log(err))}, []);
