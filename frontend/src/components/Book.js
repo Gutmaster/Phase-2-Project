@@ -5,6 +5,7 @@ function Book({bookData, books, setBooks}) {
     const [donateTimer, setDonateTimer] = useState(false)
     
     function updateStock(amount){
+        if(amount < 0 && book.inStock <= 0) return;
         fetch(`http://localhost:3000/books/${book.id}`, {
             method: 'PATCH',
             headers: {

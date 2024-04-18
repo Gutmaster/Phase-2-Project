@@ -1,5 +1,6 @@
 import React from'react';
 import logo from './BookLogo.svg';
+import './NavBar.css';
 
 function Header() {
     return (

@@ -6,7 +6,7 @@
       "author": "Isaac Asimov",
       "genre": "Science Fiction",
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/The-caves-of-steel-doubleday-cover.jpg/220px-The-caves-of-steel-doubleday-cover.jpg",
-      "inStock": 2
+      "inStock": 12
     },
     {
       "id": 2,
@@ -14,15 +14,31 @@
       "author": "J.R.R. Tolkien",
       "genre": "Fantasy",
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/TheHobbit_FirstEdition.jpg/220px-TheHobbit_FirstEdition.jpg",
-      "inStock": 4
+      "inStock": 13
     },
     {
       "title": "The Righteous Mind",
       "author": "Jonathon Haidt",
       "genre": "Psychology",
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/The_Righteous_Mind.jpg/220px-The_Righteous_Mind.jpg",
-      "inStock": 1,
+      "inStock": 4,
       "id": 3
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Dystopian Fiction",
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/51/1984_first_edition_cover.jpg",
+      "inStock": 2,
+      "id": 4
+    },
+    {
+      "title": "To Kill a Mockinbird",
+      "author": "Harper Lee",
+      "genre": "Souther Gothic",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg/220px-To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg",
+      "inStock": 3,
+      "id": 5
     }
   ]
 }

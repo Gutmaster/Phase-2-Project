@@ -17,7 +17,7 @@
 }
 
 .NavBar {
-    background: darkblue;
+    background: yellowgreen;
     text-align: center;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .App-header {
-    background-color: #282c34;
+    background-image: url('https://i.pinimg.com/originals/e7/3b/f5/e73bf567c2f21ebc09de26144e4b4b6a.jpg');
     min-height: 30vh;
     display: flex;
     flex-direction: column;
